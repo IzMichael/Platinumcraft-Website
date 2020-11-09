@@ -1,15 +1,74 @@
 <head>
-    <title>PAGE TITLE HERE</title>
+    <title>Home | Platinumcraft</title>
+    <link rel="stylesheet" href="/assets/tailwind.css">
     <link rel="stylesheet" href="https://resources.izmichael.xyz/assets/tailwind.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="/assets/js/import-html.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body>
+
+<body class="font-stnd">
     <div class="HeaderImport"></div>
     <div class="MenuImport"></div>
-    <div class="PageContent">
-        BODY GOES HERE
+    <div class="PageContent flex flex-col gap-5 p-5 bg-gray-200">
+        <div class="grid grid-cols-2 gap-5 transition-all duration-500 ease-in-out" id="info">
+            <div class="bg-white col-span-2 p-5 border-black border rounded-lg flex flex-row gap-5">
+                <div class="flex-1 flex flex-col justify-center text-right flex flex-col">
+                    <h3 class="text-4xl">Welcome to Platinumcraft</h3>
+                    <h5 class="text-2xl">A free-to-play, fun-for-all Minecraft Server</h5>
+                    <p class="text-xl">Platinumcraft is a server with many different gamemodes, such as Survival,
+                        Creative,
+                        PvP, Minigames, and
+                        many more. We aim to be a free to play, non-P2W server that's fun for everyone to
+                        participate
+                        in.
+                    </p>
+                    <a class="mt-2 p-3 bg-green-400 text-center text-xl rounded-full" href="#play">Play
+                        Now!</a>
+                </div>
+                <img class="rounded-lg flex-1 w-32" src="/assets/img/fp1.png">
+            </div>
+            <div class="overflow-y-hidden flex-1 bg-white border-black border rounded-lg p-5 flex flex-col gap-5 bg-white transform transition-all duration-500 ease-in-out"
+                id="news">
+                <h1 class="text-3xl">News and Updates</h1>
+                <zero-md src="/news.md"></zero-md>
+            </div>
+            <div class="flex flex-col gap-5">
+                <div class="bg-white p-5 border-black border rounded-lg flex flex-row gap-5" id="play">
+                    <div class="flex-1 text-right flex flex-col">
+                        <h3 class="text-4xl">Want to join us?</h3>
+                        <p class="text-xl">Open Minecraft Java Edition, 1.16.3</p>
+                        <p class="text-xl">Open your server list</p>
+                        <p class="text-xl">Click 'Add Server'</p>
+                        <p class="text-xl">In the Address box, type in <code>platinum.my.pebble.host</code></p>
+                    </div>
+                </div>
+                <div class="bg-white p-5 border-black border rounded-lg flex flex-col gap-5" id="play">
+                    <h3 class="text-4xl mx-auto">Meet the staff!</h3>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div
+                            class="border border-black rounded-lg flex flex-row items-center justify-center bg-gray-100 p-3">
+                            <img class="ml-2 w-32 h-32 border-2 border-black"
+                                src="https://render.namemc.com/skin/2d/face.png?skin=04911c5bea665b21&overlay&scale=20">
+                            <div class="ml-6 flex flex-col items-start justify-center">
+                                <h3 class="text-2xl w-full">IzMichael</h3>
+                                <h5 class="text-lg w-full">Server Owner / Redstone Rank</h5>
+                            </div>
+                        </div>
+                        <div
+                            class="border border-black rounded-lg flex flex-row items-center justify-center bg-gray-100 p-3">
+                            <img class="ml-2 w-32 h-32 border-2 border-black"
+                                src="https://render.namemc.com/skin/2d/face.png?skin=a2ac330efd048130&overlay&scale=20">
+                            <div class="ml-6 flex flex-col items-start justify-center">
+                                <h3 class="text-2xl w-full">SirEggsTheIV</h3>
+                                <h5 class="text-lg w-full">Staff Member / Netherite Rank</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="MenuImport"></div>
     <div class="FooterImport"></div>
